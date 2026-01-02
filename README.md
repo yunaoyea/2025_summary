@@ -2,6 +2,14 @@
 
 一个类似PPT的滚动翻页年终汇报项目，参考现代UI设计风格。
 
+## 🌐 在线访问
+
+**GitHub 仓库：** https://github.com/yuna-75/2025_summary
+
+**GitHub Pages（在线预览）：** https://yuna-75.github.io/2025_summary/
+
+> 💡 **提示**：如果GitHub Pages还未启用，请按照下面的"启用GitHub Pages"步骤操作。
+
 ## 功能特点
 
 - ✨ **流畅的滚动翻页**：类似PPT的页面切换效果
