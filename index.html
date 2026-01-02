@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年终汇报 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- GSAP 动画库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Iconsax 图标库 -->
+    <script src="https://cdn.jsdelivr.net/npm/iconsax@1.0.0/dist/iconsax.min.js"></script>
+</head>
+<body>
+    <!-- 导航指示器 -->
+    <div class="nav-indicator">
+        <div class="nav-dots"></div>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="slides-container">
+        <!-- 幻灯片 1: 封面 -->
+        <section class="slide slide-1">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="hero-section">
+                    <div class="glass-container">
+                        <div class="glass-content">
+                            <h1 class="main-title">2025 年度总结汇报</h1>
+                            <p class="subtitle">回顾过去，展望未来</p>
+                            <div class="info-section">
+                                <div class="info-item">
+                                    <div class="info-label">汇报人</div>
+                                    <div class="info-value">刘香</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mountain-bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 幻灯片 2: 工作回顾 -->
+        <section class="slide slide-2">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="content-section">
+                    <h2 class="section-title">2025 年度工作回顾</h2>
+                    
+                    <!-- 四象限布局 -->
+                    <div class="quarters-grid">
+                        <!-- Q1 - 左上 -->
+                        <div class="quarter-card quarter-q1">
+                            <div class="quarter-letter">Q1</div>
+                            <div class="quarter-card-content">
+                                <div class="quarter-card-header">
+                                    <h3 class="quarter-card-title">第一季度</h3>
+                                    <div class="quarter-card-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="quarter-card-text">千帆计划 黄金&R1(大模型诊断)  全民AI  官网。</p>
+                            </div>
+                        </div>
+
+                        <!-- Q2 - 右上 -->
+                        <div class="quarter-card quarter-q2">
+                            <div class="quarter-letter">Q2</div>
+                            <div class="quarter-card-content">
+                                <div class="quarter-card-header">
+                                    <h3 class="quarter-card-title">第二季度</h3>
+                                    <div class="quarter-card-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="quarter-card-text">黑金月-618 研发占比  综合搜索 板块潮汐 板块交火 算力赞赏 板块诊断 知识库（未上）。</p>
+                            </div>
+                        </div>
+
+                        <!-- Q3 - 左下 -->
+                        <div class="quarter-card quarter-q3">
+                            <div class="quarter-letter">Q3</div>
+                            <div class="quarter-card-content">
+                                <div class="quarter-card-header">
+                                    <h3 class="quarter-card-title">第三季度</h3>
+                                    <div class="quarter-card-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 16V8C20.9996 7.64928 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64928 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.27 6.96L12 12.01L20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 22.08V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="quarter-card-text">个人中心UI升级  投资日历   论坛分享  热搜榜 巨鲸搜索  看盘神器同步 黑金月-双11。</p>
+                            </div>
+                        </div>
+
+                        <!-- Q4 - 右下 -->
+                        <div class="quarter-card quarter-q4">
+                            <div class="quarter-letter">Q4</div>
+                            <div class="quarter-card-content">
+                                <div class="quarter-card-header">
+                                    <h3 class="quarter-card-title">第四季度</h3>
+                                    <div class="quarter-card-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="quarter-card-text">黑金月-双11 八阵图-浑天仪 融资融券 股价预测 多地址管理 翻页优化 看盘神器活动、同步神器的调整。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 幻灯片 3: 关键指标 -->
+        <section class="slide slide-3">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="slide-3-corner-text">it's time to go</div>
+                <div class="content-section">
+                    <h2 class="section-title">2026 计划
+                    </h2>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="metric-number">协作</div>
+                            <div class="metric-label">更多更快捷的设计协作，避免重复造轮子</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 114%;"></div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="metric-number">交互&体验</div>
+                            <div class="metric-label">用户体验优化</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.7088 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="metric-number">AI</div>
+                            <div class="metric-label">继续关注更多的AI发展</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-visual">
+                        <div class="mountain-circle-large">
+                            <div class="location-pin"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 幻灯片 4: 协作 -->
+        <section class="slide slide-4">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="content-section">
+                    <h2 class="section-title">协作</h2>
+                    <div class="collaboration-showcase">
+                        <div class="collaboration-card">
+                            <div class="collaboration-content">
+                                <div class="collaboration-points">
+                                    <div class="collaboration-point">
+                                        <div class="point-icon">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="point-content">
+                                            <h3>保证产品一致性</h3>
+                                            <p>通过统一的设计规范和组件库，确保产品体验的一致性</p>
+                                        </div>
+                                    </div>
+                                    <div class="collaboration-point">
+                                        <div class="point-icon">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="point-content">
+                                            <h3>避免重复造轮子</h3>
+                                            <p>沉淀设计资产，复用已有组件，提高效率</p>
+                                        </div>
+                                    </div>
+                                    <div class="collaboration-point">
+                                        <div class="point-icon">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7 12H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="point-content">
+                                            <h3>探索更多设计表现形式</h3>
+                                            <p>持续创新，尝试不同的视觉表达方式</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collaboration-image-example">
+                                <div class="image-label-small">组件示例</div>
+                                <div class="image-container-small">
+                                    <img src="assets/figma-collaboration/frame-1-full.png" alt="协作设计示例" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 幻灯片 5: 产品体验问题分析 -->
+        <section class="slide slide-5">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="content-section">
+                    <h2 class="section-title">交互&体验</h2>
+                    <p class="section-subtitle">体验应该是无感的。这件事儿很顺我就不会感觉到，当在提的时候，就证明让我感觉不顺了</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>不知道点哪里</h3>
+                                <p>信息过载/过深，不知道点哪里，不知道怎么完成自己想要的</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>缺少了动线触发</h3>
+                                <p>内容铺开，等用户自己去找，全都给我，等我自己去筛选。或者并没有根据我的状态，实时推荐一些讯息或内容</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>状态反馈不明确</h3>
+                                <p>数据产品其实很多页面长得很相似，但是反馈不明确，用户不知道自己点击了什么，不知道自己点击的结果是什么</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 幻灯片 6: 交互体验方法 -->
+        <section class="slide slide-6">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="content-section">
+                    <h2 class="section-title">怎样会更好一些？</h2>
+                    <p class="section-subtitle">在设计时问自己：</p>
+                    <div class="method-list">
+                        <div class="method-item">
+                            <div class="method-number">1</div>
+                            <div class="method-content">
+                                <h3>用户现在在干嘛？有没有疑问？</h3>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-number">2</div>
+                            <div class="method-content">
+                                <h3>下一步他最可能想干嘛？</h3>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-number">3</div>
+                            <div class="method-content">
+                                <h3>有没有阻碍他的动作？</h3>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-number">4</div>
+                            <div class="method-content">
+                                <h3>有没有比用户多想一步？</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="method-conclusion">👉 答清楚，就会更好一些。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 幻灯片 7: AI在工作中的应用 -->
+        <section class="slide slide-7">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="content-section">
+                    <h2 class="section-title">继续关注更多的AI</h2>
+                    <p class="section-subtitle">将AI带入自己的工作中</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>AI辅助设计工具</h3>
+                                <p>利用AI工具提升设计效率，自动化重复性工作，专注于创意和策略思考</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>数据驱动的设计决策</h3>
+                                <p>通过AI分析用户行为数据，洞察用户需求，优化设计方案和交互体验</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>持续学习AI新技术</h3>
+                                <p>关注AI领域的最新发展，学习新的工具和方法，不断探索AI在设计中的应用可能</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 幻灯片 8: 结束页 -->
+        <section class="slide slide-8">
+            <img src="assets/figma-background.png" alt="背景图" class="figma-background-image">
+            <div class="image-overlay"></div>
+            <div class="slide-content">
+                <div class="thank-you">
+                    <h1 class="thank-title">谢谢观看</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 滚动提示 -->
+    <div class="scroll-hint">
+        <div class="scroll-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <span>滚动或使用方向键翻页</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
